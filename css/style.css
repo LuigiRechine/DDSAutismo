@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  overflow: hidden;
+  transition: background 0.2s;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  color: #333;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button.stop {
+  background: #ff4d4d;
+  color: white;
+}
+
+#textContainer {
+  margin-top: 40px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Texto animado */
+.flash {
+  animation: flash 0.4s infinite;
+}
+
+@keyframes flash {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.shake {
+  animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+  0% {transform: translate(0,0);}
+  25% {transform: translate(5px,-5px);}
+  50% {transform: translate(-5px,5px);}
+  75% {transform: translate(5px,5px);}
+  100% {transform: translate(0,0);}
+}
+
+/* Flash de luz */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}

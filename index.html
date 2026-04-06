@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiência Sensorial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="container">
+    <h1>🌈 Experiência Sensorial</h1>
+    <p>Prepare-se para uma simulação rápida.</p>
+
+    <div class="buttons">
+      <button onclick="startExperience()">Iniciar</button>
+      <button onclick="stopExperience()" class="stop">Parar</button>
+    </div>
+
+    <div id="textContainer"></div>
+  </div>
+
+  <!-- ÁUDIOS -->
+  <audio id="cam" src="img/camera.wav" loop></audio>
+  <audio id="crowd" src="img/crowd.wav" loop></audio>
+  <audio id="traffic" src="img/traffic.wav" loop></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
